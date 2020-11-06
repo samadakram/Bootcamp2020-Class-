@@ -18,6 +18,9 @@ function App(){
           <button onClick={()=> setOn(false)}>OFF</button>
           <br/>
           <h3>Temperature of room is : {isTemp}°C </h3>
+          <br/>
+          <button onClick={()=> setTemp(++isTemp)}>Increase</button>
+          <button onClick={()=> setTemp(--isTemp)}>Decrease</button>
         </div>
     </div>
   );

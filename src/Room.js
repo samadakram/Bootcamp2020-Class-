@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Room(){
-
-    const [isLit, setLit] = useState(false);
-
+function Room(props){
     return(
         <div>
-           <h1> The room is {isLit ? 'lit' : 'dark'} </h1>
-            <br/>
-            <button onClick={()=> setLit(!isLit)}>Flip</button>
+           <h1> Light of room is : {props.light} </h1>
         </div>
     );
 }

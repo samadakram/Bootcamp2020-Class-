@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Room from './Room.js';
 import './App.css';
 
 function App(){
+
+  let [isOn, setOn] = useState(false);
+
   return(
     <div>
-      <Room />
+      <Room light={isOn ? 'ON' : 'OFF'} />
     </div>
   );
 }

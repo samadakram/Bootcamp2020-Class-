@@ -7,6 +7,11 @@
   width: 100vw;
   height: 100vh;
 }
+.container{
+  width: 70vw;
+  margin: auto;
+  border: 1px solid white;
+}
 .on{
   background-color: #F0E68C;
 }

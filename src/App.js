@@ -5,9 +5,10 @@ import './App.css';
 function App(){
 
   let [isOn, setOn] = useState(true);
+  let light = isOn ? "on" : "off";
 
   return(
-    <div>
+    <div className={`main ${light}`}>
       <Room light={isOn ? 'ON' : 'OFF'}/>
       <br/>
       <button onClick={()=> setOn(true)}>ON</button>

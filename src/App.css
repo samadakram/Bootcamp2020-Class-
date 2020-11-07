@@ -14,13 +14,21 @@
 }
 .on{
   background-color: #F0E68C;
+  color: #2F4F4F;
 }
 .off{
   background-color: #2F4F4F;
+  color: #F0E68C;
 }
 .room,.temp{
   width: 40%;
   margin: auto;
   text-align: center;
   border: 1px solid blue;
+}
+button{
+  width: 100px;
+  height: 30px;
+  margin: 0px 5px 5px 0px;
+  font-weight: bold;
 }

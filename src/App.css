@@ -18,3 +18,9 @@
 .off{
   background-color: #2F4F4F;
 }
+.room,.temp{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid blue;
+}

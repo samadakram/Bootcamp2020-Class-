@@ -12,15 +12,19 @@ function App(){
   return(
     <div className={`main ${light}`}>
         <div className="container">
-          <Room light={isOn ? 'ON' : 'OFF'}/>
+          <div className="room">
+            <Room light={isOn ? 'ON' : 'OFF'}/>
+            <br/>
+            <button onClick={()=> setOn(true)}>ON</button>
+            <button onClick={()=> setOn(false)}>OFF</button>
+          </div>
           <br/>
-          <button onClick={()=> setOn(true)}>ON</button>
-          <button onClick={()=> setOn(false)}>OFF</button>
-          <br/>
-          <h3>Temperature of room is : {isTemp}°C </h3>
-          <br/>
-          <button onClick={()=> setTemp(++isTemp)}>Increase</button>
-          <button onClick={()=> setTemp(--isTemp)}>Decrease</button>
+          <div className="temp">
+            <h3>Temperature of room is : {isTemp}°C </h3>
+            <br/>
+            <button onClick={()=> setTemp(++isTemp)}>Increase</button>
+            <button onClick={()=> setTemp(--isTemp)}>Decrease</button>
+          </div>
         </div>
     </div>
   );

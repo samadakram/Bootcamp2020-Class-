@@ -10,7 +10,6 @@
 .container{
   width: 70vw;
   margin: auto;
-  border: 1px solid white;
 }
 .on{
   background-color: #F0E68C;
@@ -24,7 +23,6 @@
   width: 40%;
   margin: auto;
   text-align: center;
-  border: 1px solid blue;
 }
 button{
   width: 100px;

@@ -34,3 +34,11 @@ button{
   border-radius: 10px;
   outline: none;
 }
+.button-light{
+  background-color: #2F4F4F;
+  color: #F0E68C;
+}
+.button-dark{
+  background-color: #F0E68C;
+  color: #2F4F4F;
+}

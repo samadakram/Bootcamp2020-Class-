@@ -9,21 +9,23 @@ function App(){
 
   let [isTemp, setTemp] = useState(22);
 
+  let btnDark = isOn ? "button-light" : "button-dark";
+
   return(
     <div className={`main ${light}`}>
         <div className="container">
           <div className="room">
             <Room light={isOn ? 'ON' : 'OFF'}/>
             <br/>
-            <button onClick={()=> setOn(true)}>ON</button>
-            <button onClick={()=> setOn(false)}>OFF</button>
+            <button className={btnDark} onClick={()=> setOn(true)}>ON</button>
+            <button className={btnDark} onClick={()=> setOn(false)}>OFF</button>
           </div>
           <br/>
           <div className="temp">
             <h3>Temperature of room is : {isTemp}°C </h3>
             <br/>
-            <button onClick={()=> setTemp(++isTemp)}>Increase</button>
-            <button onClick={()=> setTemp(--isTemp)}>Decrease</button>
+            <button className={btnDark} onClick={()=> setTemp(++isTemp)}>Increase</button>
+            <button className={btnDark} onClick={()=> setTemp(--isTemp)}>Decrease</button>
           </div>
         </div>
     </div>

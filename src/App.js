@@ -17,8 +17,8 @@ function App(){
           <div className="room">
             <Room light={isOn ? 'ON' : 'OFF'}/>
             <br/>
-            <button className={btnDark} onClick={()=> setOn(true)}>ON</button>
-            <button className={btnDark} onClick={()=> setOn(false)}>OFF</button>
+            <button className={`btnDark ${isOn ? 'active-button' : ''}`} onClick={()=> setOn(true)}>ON</button>
+            <button className={`btnDark ${!isOn ? 'active-button' : '' }`} onClick={()=> setOn(false)}>OFF</button>
           </div>
           <br/>
           <div className="temp">

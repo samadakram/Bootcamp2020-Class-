@@ -42,3 +42,6 @@ button{
   background-color: #F0E68C;
   color: #2F4F4F;
 }
+.active-button{
+  color: blue;
+}
